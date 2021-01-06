@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'sinatra', require: 'sinatra/base'
 gem 'faraday'
 gem 'json'
+gem 'figaro'
+
 
 group :development, :test do
   gem 'shotgun'
@@ -12,4 +14,5 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'rack-test'
+  gem 'pry'
 end
