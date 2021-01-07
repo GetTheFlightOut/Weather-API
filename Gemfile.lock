@@ -44,9 +44,6 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     coderay (1.1.3)
-<<<<<<< HEAD
-    diff-lcs (1.4.4)
-=======
     concurrent-ruby (1.1.7)
     daemons (1.3.1)
     database_cleaner-active_record (2.0.0.beta2)
@@ -54,26 +51,11 @@ GEM
       database_cleaner-core (~> 2.0.0.beta2)
     diff-lcs (1.4.4)
     eventmachine (1.2.7)
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
     faraday (1.3.0)
       faraday-net_http (~> 1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     faraday-net_http (1.0.0)
-<<<<<<< HEAD
-    figaro (1.2.0)
-      thor (>= 0.14.0, < 2)
-    json (2.5.1)
-    launchy (2.5.0)
-      addressable (~> 2.7)
-    method_source (1.0.0)
-    mini_mime (1.0.2)
-    mini_portile2 (2.5.0)
-    multipart-post (2.1.1)
-    mustermann (1.1.1)
-      ruby2_keywords (~> 0.0.1)
-    nokogiri (1.11.0)
-=======
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     method_source (1.0.0)
@@ -84,7 +66,6 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.11.1)
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pry (0.13.1)
@@ -97,13 +78,9 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-<<<<<<< HEAD
-    regexp_parser (1.8.2)
-=======
     rake (13.0.3)
     regexp_parser (1.8.2)
     require_all (3.0.0)
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -133,31 +110,23 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
-<<<<<<< HEAD
-    thor (1.0.1)
-=======
     sinatra-activerecord (2.0.21)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (1.3.13)
     thin (1.8.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     thor (0.20.3)
     thread_safe (0.3.6)
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
     tilt (2.0.10)
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
-<<<<<<< HEAD
-=======
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -165,19 +134,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  capybara
-  faraday
-  figaro
-  json
-  launchy
-  pry
-  rack-test
-  rspec
-  rspec-core
-  shotgun
-  sinatra
-=======
   activerecord (~> 4.2, >= 4.2.6)
   bcrypt
   capybara
@@ -192,9 +148,7 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-activerecord
-  sqlite3 (~> 1.3.6)
   thin
->>>>>>> c5e2de67c7c487aa9673483587d09052c8d929c3
   tux
 
 BUNDLED WITH
