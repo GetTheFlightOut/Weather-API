@@ -2,3 +2,12 @@ language: ruby
 rvm:
  - 2.2
  - jruby
+before_install:
+    - gem install bundler
+language: ruby
+cache: bundler
+deploy:
+  provider: heroku
+  api_key:
+    secure: WEATHER_API_KEY
+  skip_cleanup: true
