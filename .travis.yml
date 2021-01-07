@@ -1,13 +1,18 @@
 language: ruby
-rvm:
- - 2.2
- - jruby
+rbenv:
+  - 2.5.3
 before_install:
-    - gem install bundler
-language: ruby
+  - gem install bundler
+# before_install:
+#   - gem i rubygems-update -v '<3' && update_rubygems
+#   - gem install bundler -v 1.17.3
 cache: bundler
 deploy:
   provider: heroku
   api_key:
     secure: WEATHER_API_KEY
+app: gtfo-weather-api
+  on:
+    repo: GetThatFlightOut/Weather-API
+    branch: main
   skip_cleanup: true
