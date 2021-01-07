@@ -19,7 +19,9 @@ This project part of a Service-Oriented Architecture (SOA) application. The Weat
 ## Testing
 
 * For testing our team implemented Travis CI with RSpec
+
 > Travis CI is cloud based and when we submit a pull request, Travis will attempt to build our project and run the tests to ensure everything is working as expected. 
+
 > RSpec is a tool for unit testing that will ensure we have the intended functionality at each level of our code. 
 
 ## Learning Goals
