@@ -1,18 +1,21 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'sinatra', require: 'sinatra/base'
+gem 'sinatra'
+gem 'activerecord', '~> 4.2', '>= 4.2.6', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'require_all'
+gem 'thin'
+gem 'shotgun'
+gem 'pry'
+gem 'bcrypt'
+gem 'tux'
 gem 'faraday'
-gem 'json'
-gem 'figaro'
+gem 'figaro', git: 'https://github.com/bpaquet/figaro.git', branch: 'sinatra'
 
-
-group :development, :test do
-  gem 'shotgun'
+group :test do
   gem 'rspec'
-  gem 'rspec-core'
-  gem 'tux'
   gem 'capybara'
-  gem 'launchy'
   gem 'rack-test'
-  gem 'pry'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end
