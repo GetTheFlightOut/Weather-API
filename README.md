@@ -9,7 +9,7 @@
   - [Licenses](#licenses)
   - [Contact](#contact)
   - [Acknowledgments](#acknowledgments)
-  
+
 ## What it does
 
 This project part of a Service-Oriented Architecture (SOA) application. The Weather-API serves as an intermediary, or microservice, from the Open Weather API and the GTFO-BE repo.
@@ -66,6 +66,4 @@ This project part of a Service-Oriented Architecture (SOA) application. The Weat
     
 #### Will Dunlap: [LinkedIn](https://www.linkedin.com/in/willwdunlap/), [Email](dunlapww@gmail.com), [GitHub](dunlapww)
    
-   
- 
 ## Acknowledgments
