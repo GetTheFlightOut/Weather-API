@@ -21,7 +21,10 @@ end
 #     min_temp: "37",
 #     max_temp: "40",
 #     description: "cloudy",
-#     date: "05-01-2021"
+#     date: "05-01-2021", DateTime.strptime(weather_day[:dTime].to_s.'%s')
+#     # MVP or extension?
+#     alerts: "Tsunami",
+#     feels_like: "feels like 0 degrees"
 #     }
 #   }
 # }
