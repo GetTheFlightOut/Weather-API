@@ -21,8 +21,13 @@ describe WeatherDay, type: :poros do
 
   it 'exists' do
     expect(@new_day).to be_a WeatherDay
-    expect(@new_day.min_temp).to eq(271.63)
-    expect(@new_day.max_temp).to eq(275.27)
+    expect(@new_day.min_f.round(2)).to eq(30.48)
+    expect(@new_day.min_c.round(2)).to eq(-1.52)
+    expect(@new_day.max_f.round(2)).to eq(34.12)
+    expect(@new_day.max_c.round(2)).to eq(2.12)
+    expect(@new_day.day_feels_like_f.round(2)).to eq(23.67)
+    expect(@new_day.day_feels_like_c.round(2)).to eq(-8.33)
+    expect(@new_day.date).to eq("Fri, 08 Jan 2021 02:00:00 +0000")
     expect(@new_day.description).to eq("clear sky")
   end
 
