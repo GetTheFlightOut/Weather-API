@@ -14,6 +14,8 @@ class WeatherService
   end
 
   def self.parse_data(response)
-    JSON :data => JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 end
+
+# JSON :data =>
