@@ -7,7 +7,7 @@ end
 describe ApplicationController do
   it "responds with the JSON requested" do
     get 'api/v1/weather?lat=35&lon=139'
-# binding.pry
+
     expect(last_response.status).to eq(200)
 
     expect(last_response).to be_successful
@@ -30,5 +30,9 @@ describe ApplicationController do
     expect(response).to have_key(:current)
     expect(response[:current]).to be_a(Hash)
     binding.pry
+  end
+
+  it 'returns error message and status code with invalid params' do
+
   end
 end
