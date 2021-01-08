@@ -1,12 +1,14 @@
 class WeatherDay
   attr_reader :min_temp,
               :max_temp,
-              :description
+              :description,
+              :date
 
   def initialize(day_weather)
     @min_temp = day_weather[:temp][:min]
     @max_temp = day_weather[:temp][:max]
     @description = day_weather[:weather][0][:description]
+    @date = DateTime.strptime(day_weather[:dTime].to_s.'%s')
   end
 
   def fahrenheit(temp)
