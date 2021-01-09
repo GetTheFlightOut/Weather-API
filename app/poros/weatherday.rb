@@ -6,7 +6,8 @@ class WeatherDay
               :day_feels_like_f,
               :day_feels_like_c,
               :description,
-              :date
+              :date,
+              :sky_coverage
 
   def initialize(day_weather)
     @min_f = fahrenheit(day_weather[:temp][:min])
@@ -17,6 +18,7 @@ class WeatherDay
     @day_feels_like_c = celsius(day_weather[:feels_like][:day])
     @description = day_weather[:weather][0][:description]
     @date = DateTime.strptime(day_weather[:dt].to_s, '%s')
+    @sky_coverage = day_weather[:clouds]
   end
 
   def fahrenheit(temp)
