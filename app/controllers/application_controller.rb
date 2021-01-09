@@ -1,21 +1,15 @@
 require 'pry'
 require './config/environment'
+require './app/services/weather_service'
 
 class ApplicationController < Sinatra::Base
+  get '/api/v1/weather' do
+    weather_days = WeatherFacade.daily_weather(params)
 
-  get "/api/v1/weather" do
-    # params = {"lat"=>"35", "lon"=>"139"}
-    lat = params[:lat]
-    lon = params[:lon]
-    conn = Faraday.new(url: "http://api.openweathermap.org")
-    
-    response = conn.get("/data/2.5/onecall") do |req|
-      req.params["lat"] = lat
-      req.params["lon"] = lon
-      req.params["appid"] = ENV['WEATHER_API_KEY']
+    if weather_days.instance_of?(Array)
+      JSON WeatherSerializer.new(weather_days)
+    else
+      JSON weather_days
     end
-    # require 'pry'; binding.pry
-
-    data = JSON :data => JSON.parse(response.body)
   end
 end

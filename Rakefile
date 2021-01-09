@@ -1,4 +1,4 @@
-ENV["SINATRA_ENV"] ||= "development"
+ENV['SINATRA_ENV'] ||= 'development'
 
 require_relative './config/environment'
 
@@ -7,7 +7,7 @@ begin
 
   RSpec::Core::RakeTask.new(:spec)
 
-  task :default => :spec
+  task default: :spec
 rescue LoadError
   # no rspec available
 end
