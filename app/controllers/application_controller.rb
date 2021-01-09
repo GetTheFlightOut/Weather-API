@@ -10,7 +10,6 @@ class ApplicationController < Sinatra::Base
       JSON WeatherSerializer.new(weather_days)
     else
       JSON weather_days
-      # "{\"cod\":\"400\",\"message\":\"wrong longitude\"}"
     end
   end
 end

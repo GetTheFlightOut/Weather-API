@@ -34,8 +34,6 @@ describe ApplicationController do
   it 'it return an error json if invalid lat/lon entered' do
     get 'api/v1/weather?lat=35&lon=ab'
 
-    # expecting below structure for error JSON
-    # {:cod=>"400", :message=>"wrong longitude"}
     response = JSON.parse(last_response.body, symbolize_names: true)
     expect(response[:cod]).to eq('400')
     expect(response).to have_key(:message)
