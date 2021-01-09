@@ -3,7 +3,7 @@ class WeatherSerializer
     json = {}
     json[:data] = []
     weather_days.each do |day|
-      weather_day = {type: "weather", id: nil, attributes: {}}
+      weather_day = { type: 'weather', id: nil, attributes: {} }
       weather_day[:attributes][:min_f] = day.min_f
       weather_day[:attributes][:max_f] = day.max_f
       weather_day[:attributes][:min_c] = day.min_c

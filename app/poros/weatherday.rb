@@ -8,7 +8,6 @@ class WeatherDay
               :description,
               :date
 
-
   def initialize(day_weather)
     @min_f = fahrenheit(day_weather[:temp][:min])
     @max_f = fahrenheit(day_weather[:temp][:max])
@@ -17,11 +16,11 @@ class WeatherDay
     @day_feels_like_f = fahrenheit(day_weather[:feels_like][:day])
     @day_feels_like_c = celsius(day_weather[:feels_like][:day])
     @description = day_weather[:weather][0][:description]
-    @date = DateTime.strptime(day_weather[:dt].to_s,'%s')
+    @date = DateTime.strptime(day_weather[:dt].to_s, '%s')
   end
 
   def fahrenheit(temp)
-    (temp - 273.15) * (9/5) + 32
+    (temp - 273.15) * (9 / 5) + 32
   end
 
   def celsius(temp)
