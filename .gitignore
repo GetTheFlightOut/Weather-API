@@ -1,4 +1,5 @@
-config/application.yml
-
 #add simplecov folder
 /coverage
+
+# Ignore application configuration
+/config/application.yml
