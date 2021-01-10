@@ -54,7 +54,7 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
        :date=>"2021-01-10T02:00:00+00:00"
       }
     },
-    ...(there will be 7 days worth of weather forecast)
+    ...(there will be 8 days worth of weather forecast)
   ]
 }
 ```
