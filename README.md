@@ -39,7 +39,24 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
        :date=>"2021-01-09T02:00:00+00:00",
        :sky_coverage=>20
       }
-    }
+    },
+    {
+      :type=>"weather",
+      :id=>nil,Â
+      :attributes=>
+      {
+       :min_f=>30.400000000000034, 
+       :max_f=>34.99000000000001, 
+       :min_c=>-1.599999999999966, 
+       :max_c=>2.990000000000009, 
+       :day_feels_like_c=>-7.0499999999999545, 
+       :day_feels_like_f=>24.950000000000045, 
+       :description=>"clear sky", 
+       :date=>"2021-01-10T02:00:00+00:00",
+       :sky_coverage=>20
+      }
+    },
+    ...(there will be 7 days worth of weather forecast)
   ]
 }
 ```
