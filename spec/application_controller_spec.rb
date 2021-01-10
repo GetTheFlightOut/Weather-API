@@ -29,6 +29,8 @@ describe ApplicationController do
     expect(response[:data][0][:attributes][:description]).to be_an(String)
 
     expect(response[:data][0][:attributes][:date]).to be_a(String)
+
+    expect(response[:data][0][:attributes][:sky_coverage]).to be_a(Integer)
   end
 
   it 'it return an error json if invalid lat/lon entered' do
