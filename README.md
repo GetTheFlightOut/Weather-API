@@ -36,7 +36,8 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
        :day_feels_like_c=>-7.0499999999999545, 
        :day_feels_like_f=>24.950000000000045, 
        :description=>"clear sky", 
-       :date=>"2021-01-09T02:00:00+00:00"
+       :date=>"2021-01-09T02:00:00+00:00",
+       :sky_coverage=>20
       }
     }
   ]
