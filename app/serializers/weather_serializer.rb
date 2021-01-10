@@ -12,6 +12,7 @@ class WeatherSerializer
       weather_day[:attributes][:day_feels_like_f] = day.day_feels_like_f
       weather_day[:attributes][:description] = day.description
       weather_day[:attributes][:date] = day.date
+      weather_day[:attributes][:sky_coverage] = day.sky_coverage
       json[:data] << weather_day
     end
     json
@@ -25,7 +26,8 @@ end
 #     min_temp: "37",
 #     max_temp: "40",
 #     description: "cloudy",
-#     date: "05-01-2021", DateTime.strptime(weather_day[:dTime].to_s.'%s')
+#     date: "05-01-2021", DateTime.strptime(weather_day[:dTime].to_s.'%s'),
+#     :sky_coverage: 69
 #     # MVP or extension?
 #     alerts: "Tsunami",
 #     feels_like: "feels like 0 degrees"
