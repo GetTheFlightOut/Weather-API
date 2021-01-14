@@ -87,7 +87,6 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
 {:cod=>"400", :message=>"wrong longitude"}
 ```
 
-
 ## Dependencies
 ## Testing
 
