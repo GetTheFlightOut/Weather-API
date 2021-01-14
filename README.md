@@ -23,8 +23,8 @@ To view the other components of the application please visit the [Github Project
 ## How to Install Weather-API
 
 ```
-git clone git@github.com:GetThatFlightOut/Flight-API.git
-cd Flight-API
+git clone git@github.com:GetThatFlightOut/Weather-API.git
+cd Weather-API
 bundle install
 figaro install
 ```
