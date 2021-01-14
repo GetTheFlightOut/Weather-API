@@ -35,7 +35,7 @@ figaro install
 
 The `figaro install` command will create an `application.yml` file in your config folder. In that folder, at the bottom of the file add your API as below:
 ```
-FLIGHT_API_KEY: "<<Your API key here>>"
+WEATHER_API_KEY: "<<Your API key here>>"
 ```
 
 To get the server running, type `shotgun` in your terminal.
