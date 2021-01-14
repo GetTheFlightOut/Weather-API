@@ -14,9 +14,16 @@
 
 ## What it does
 
-This project part of a Service-Oriented Architecture (SOA) application. The Weather-API serves as an intermediary, or microservice, from the Open Weather API and the GTFO-BE repo.
+This project is part of a Service-Oriented Architecture (SOA) application that provides users with flight and weather information based on search parameters that the user provides. The Weather-API serves as an intermediary, or microservice, from the OpenWeather API and the GTFO-BE repo. It retrieves data from the OpenWeather API and packages it with only the information needed for the BE application, which in turn combines the data from both the Weather and Flight APIs to send a combination of data from the two in one package for the front end.
+
+To view the production site, please visit the [GTFO link](https://gtfo-fe.herokuapp.com/).
+
+To view the other components of the application please visit the [Github Project Organization](https://github.com/GetThatFlightOut).
 
 ## How to Install Weather-API
+
+
+
 ## API Contract
 
 The weather API adheres to the standard JSON structure outlined on [jsonapi](#jsonapi.org).
