@@ -31,6 +31,12 @@ To view the production site, please visit the [GTFO link](https://gtfo-fe.heroku
 
 To view the other components of the application please visit the [Github Project Organization](https://github.com/GetThatFlightOut).
 
+## System Design
+
+> We planned out our project on this [Miro Board.](https://miro.com/app/board/o9J_lZk4cS8=/)
+
+<a href="https://ibb.co/tp5msx8"><img src="https://i.ibb.co/r2J76c4/Screen-Shot-2021-01-14-at-4-23-46-PM.png" alt="Screen-Shot-2021-01-14-at-4-23-46-PM" border="0"></a>
+
 ## How to Install Weather-API
 
 ```
