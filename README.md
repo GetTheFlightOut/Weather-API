@@ -38,8 +38,6 @@ git clone git@github.com:GetThatFlightOut/Weather-API.git
 cd Weather-API
 bundle install
 figaro install
-  #Setup ENV variables in application.yml:
-  -WEATHER_API_KEY: "YOUR_OPEN_WEATHER_API_KEY"
 ```
 
 * Visit the [OpenWeather API documentation](https://openweathermap.org/api) and follow the link to sign up for an API key.
@@ -55,7 +53,7 @@ To get the server running, type `shotgun` in your terminal.
 
 The weather API adheres to the standard JSON structure outlined on [jsonapi](#jsonapi.org).
 
-- An example of a successful response is as follows:
+- `GET /api/v1/weather`: An example of a successful response is as follows:
 ```
 {:data=>
   [
@@ -93,7 +91,7 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
   ]
 }
 ```
-- An example of an unsuccessful response is:
+- `GET /api/v1/flights`: An example of an unsuccessful response is:
 ```
 {:cod=>"400", :message=>"wrong longitude"}
 ```
@@ -134,11 +132,13 @@ The `GET /api/v1/weather` endpoint requires three parameters for a successful re
 
 ## Testing
 
-* For testing our team implemented Travis CI with RSpec
+* For testing our team implemented [Travis CI](https://travis-ci.com/) with [RSpec](https://rspec.info/)
 
 > Travis CI is cloud based and when we submit a pull request, Travis will attempt to build our project and run the tests to ensure everything is working as expected. 
 
 > RSpec is a tool for unit testing that will ensure we have the intended functionality at each level of our code. 
+
+* In order to run the tests, run `bundle exec rspec` in the command line and you should have all passing tests.
 
 ## Learning Goals
 
