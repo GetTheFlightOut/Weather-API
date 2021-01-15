@@ -116,7 +116,7 @@ The `GET /api/v1/weather` endpoint requires three parameters for a successful re
 }
 ```
 
-  * The parameters above would create the following url if you're using the 9393 port: [http://localhost:9393/api/v1/weather?lat=35&lon=139&appid=](http://localhost:9393/api/v1/weather?lat=35&lon=139&appid=)<<Your API key here>>
+  * The parameters above would create the following url if you're using the 9393 port: [http://localhost:9393/api/v1/weather?lat=35&lon=139&appid=](http://localhost:9393/api/v1/weather?lat=35&lon=139&appid=)`<<Your API key here>>`
   
   * View of an API call in [Postman](https://www.postman.com/):
   
