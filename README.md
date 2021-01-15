@@ -98,6 +98,29 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
 {:cod=>"400", :message=>"wrong longitude"}
 ```
 
+The `GET /api/v1/weather` endpoint requires three parameters for a successful response. The required parameters are:
+
+  `:lat` - (string) - the latitude of the destination city
+
+  `:lon` - (string) - the longitude of the desitnation city
+
+  `:apikey` - (string) - your API key obtained from OpenWeather
+
+
+- An example of valid required parameters is:
+```
+{
+  lat: "35",
+  lon: "139",
+  apikey: "<<Your API key>>"
+}
+```
+
+  * The parameters above would create the following url if you're using the 9393 port: http://localhost:9393/api/v1/weather?lat=35&lon=139&appid=<<Your API key here>>
+  
+  * View of an API call in [Postman](https://www.postman.com/):
+![weather_call](https://user-images.githubusercontent.com/7945439/104744884-a71e4380-570a-11eb-897d-5d781cb057cf.png)
+
 ## Dependencies
 
 * For this microservice we used the [Sinatra](https://github.com/sinatra/sinatra) with the [Shotgun Gem](https://github.com/rtomayko/shotgun) to build a condensed ruby framework and run it on a local server.
