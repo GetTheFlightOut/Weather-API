@@ -99,6 +99,15 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
 ```
 
 ## Dependencies
+
+* For this microservice we used the [Sinatra](https://github.com/sinatra/sinatra) with the [Shotgun Gem](https://github.com/rtomayko/shotgun) to build a condensed ruby framework and run it on a local server.
+
+* We used the [Faraday Gem](https://github.com/lostisland/faraday) to make calls to our API service.
+
+* We used the [Figaro Gem](https://github.com/laserlemon/figaro) to keep confidential information like API keys secure.
+
+* The [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem was used to ensure that we covered 100% of our code with unit testing. 
+
 ## Testing
 
 * For testing our team implemented Travis CI with RSpec
@@ -150,6 +159,8 @@ The weather API adheres to the standard JSON structure outlined on [jsonapi](#js
 #### Will Dunlap: [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/willwdunlap/), [Email](mailto:dunlapww@gmail.com), [GitHub](https://github.com/dunlapww)
    
 ## Acknowledgments
+
+Thank you to Ian Douglas and Dione Wilson for being such amazing instructors and guiding us through this project! 
 
 <!-- MARKDOWN LINKS -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
